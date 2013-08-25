@@ -3,6 +3,7 @@
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       %title= content_for?(:title) ? yield(:title) : "Rails Bootstrap"
+      %script{ src: "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"}
       %meta{:content => content_for?(:description) ? yield(:description) : "Rails Bootstrap", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
